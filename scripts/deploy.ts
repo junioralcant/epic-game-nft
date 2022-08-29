@@ -20,21 +20,21 @@ async function main() {
   await gameContract.deployed();
   console.log("Contrato implantado no endereço:", gameContract.address);
 
-  let txn;
+  // let txn;
 
-  txn = await gameContract.mintCharacterNFT(2);
-  await txn.wait();
+  // txn = await gameContract.mintCharacterNFT(2);
+  // await txn.wait();
 
-  let returnedTokenUri = await gameContract.tokenURI(1);
-  console.log("Token URI: ", returnedTokenUri);
+  // let returnedTokenUri = await gameContract.tokenURI(1);
+  // console.log("Token URI: ", returnedTokenUri);
 
-  txn = await gameContract.attackBoss();
-  await txn.wait();
+  // txn = await gameContract.attackBoss();
+  // await txn.wait();
 
-  txn = await gameContract.attackBoss();
-  await txn.wait();
+  // txn = await gameContract.attackBoss();
+  // await txn.wait();
 
-  console.log("Done! ");
+  // console.log("Done! ");
 }
 
 async function runMain() {
